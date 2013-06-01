@@ -1,0 +1,263 @@
+*{
+	text-decoration:none;	
+	padding: 0px;
+	margin: 0px;
+	font-family: "Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei","微软雅黑",tahoma,arial,simsun,"宋体";	
+	list-style-type: none;
+}
+
+a{
+	color: #444;
+}
+
+a:hover{
+	color: #3AA2B4
+}
+
+body{
+	text-align: center;	
+	font-size: 12px;
+	color: #444;
+	background: url(/template/img/lofterbg.png) repeat-x;
+	background-color: #ededef;
+}
+
+.timeline h1 {
+	font-weight: 500;
+	font-size: 18px;
+}
+.timeline h2,
+.timeline h3 {
+	font-weight: 500;
+	font-size: 17px;
+}
+
+.blog-info {
+	margin: 6px 0;
+	padding-bottom: 3px;
+	border-bottom: 1px dashed #ccc;
+}
+
+.blog-content {
+	color: #555;
+}
+
+.light {
+	color: #999;
+}
+
+.blog-title {
+	font-weight: 600;
+	font-size: 22px;
+}
+
+.clear-font-size h1,
+.clear-font-size h2,
+.clear-font-size h3 {
+	font-size: 14px !important;
+	color: #333;
+}
+.clear-font-size pre > code {
+	font-size: 13px !important;
+}
+
+.archive-info{
+	font-size: 14px;
+	color: #5E6069;
+	border-bottom: 1px dashed #CCC;
+	padding: 5px 0;
+}
+.archive-list{
+	margin: 20px 0 50px;
+	color: #333;
+}
+
+.archive-item h3{
+	padding-left: 15px;
+	line-height: 2.5em;
+}
+
+.archive-item ul{
+	padding-left: 52px;
+	line-height: 2.5em;
+	font-size: 13px;
+}
+
+.archive-item dt{
+	color: #555;
+	display: inline-block;
+	width: 100px;
+}
+
+.archive-item a{
+	color: #3AA2B4
+}
+
+.archive-item a:hover{
+	color: #E26C6C;
+}
+
+.archive-item dl{
+	display: inline-block;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.pull-right{
+	color: #777;
+	
+	float: right;
+}
+
+.header{
+	margin: 0 auto;
+	height: 82px;
+	width: 928px;
+	margin-bottom: 30px;
+}
+
+.discription{
+	line-height: 1.8em;
+	font-size: 40px;
+	float: left;
+	color: #EEE;
+}
+
+.layout{
+	clear: both;
+	margin: 0 auto;
+	width: 928px;
+}
+
+.navbar{
+	background: #ddd;
+	height: 110px;
+	margin-bottom: 30px;
+	-moz-box-shadow: 3px 3px 4px #999;
+    -webkit-box-shadow: 3px 3px 4px #999;
+    box-shadow: 3px 3px 4px #999;
+}
+
+.navbar li{
+	cursor: pointer;
+	background: #FFF;
+	float: left;
+	width: 167px;
+	margin: 0 0 -1px;
+	height: 110px;	
+	border-left:1px solid #ccc;
+	text-align: center;
+	font-size: 30px;
+	line-height: 3.4em;	
+}
+
+.navbar a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+.navbar li:hover{
+	background: #CCC;
+}
+
+.main{
+	float: left;
+	width: 674px;
+	text-align: left;
+}
+
+.oneblog{
+	font-size: 14px;
+	padding: 3px 32px 10px 53px;
+	background: #FFF;
+	border-radius: 15px;
+	margin-bottom: 30px;
+	-moz-box-shadow: 3px 3px 4px #999;
+    -webkit-box-shadow: 3px 3px 4px #999;
+    box-shadow: 3px 3px 4px #999;
+}
+
+.oneblog h3,h4,h5{
+	font-weight: normal;
+}
+
+.oneblog .title{
+	display: inline-block;
+	margin:10px 0px;
+}
+
+.oneblog a{
+	color: #3AA2B4;
+}
+
+.oneblog a:hover{
+	color: #E26C6C;
+}
+
+.timeline img{
+	height: 0px;
+	width: 0px;
+}
+
+.showtime{
+	color: #777;
+	line-height: 3.2em;
+	float: right;
+}
+
+.oneblog .text{
+	line-height: 1.6em;
+	margin-bottom: 10px;
+}
+
+.readall{
+	color: #a073b9;
+	line-height: 0.3em;
+	float: right;
+}
+
+
+
+.sidebar{
+	text-align: left;
+	float: right;
+	width: 230px;
+	padding: 0 0 30px;
+	min-height: 600px;
+}
+
+.sidebar li{
+	padding: 10px 20px;
+	background: #f9f9f9;
+	margin-bottom: 10px;
+	border-bottom: 2px solid #bbb;
+	border-right: 2px solid #ccc;
+}
+
+.sidebar a{
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+}
+
+.footer{
+	color: #999;
+	clear: both;
+	margin: 30px;
+}
+
+.footer a{
+	color: #999;
+}
+
+.footer a:hover{
+	color: #3AA2B4;
+}
+
+.footer span{
+	display: inline-block;
+	margin: 0px 20px;
+}

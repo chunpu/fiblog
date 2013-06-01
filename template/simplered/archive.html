@@ -1,0 +1,5 @@
+<ul class='blog_list'>
+<%blogorder.forEach(function(i){%>
+	<li><span><%=blogs[i].showtime%></span><span><a href="<%=blogs[i].relative%>"><%=blogs[i].title%></a></span></li>
+<%})%>
+</ul>

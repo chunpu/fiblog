@@ -1,0 +1,67 @@
+<div class="archive">
+	<%var endtime = new Date(new Date()-3*24*60*60*1000).getTime();var startblog = 0;%>
+	<div class="archive-info">
+		共有<%=timeorder.length%>篇文章,最后更新时间为<%=blogs[timeorder[0]].time%>
+	</div>
+	<div class="archive-list">
+	
+		<div class="archive-item">
+			<h3>》三天以内</h3>
+			<ul>
+				<%for(var i = startblog; i < timeorder.length; i++){
+					var b = timeorder[i];
+					startblog = i;
+					if(blogs[b].time < endtime){						
+						break;
+					}
+					else{%>
+					<li><dt><%=blogs[b].showtime%></dt><dl><a href="<%=blogs[b].relative%>"><%=blogs[b].title%></a></dl></li>
+				<%}}%>
+			</ul>
+		</div>
+		
+		<div class="archive-item">
+			<%endtime = new Date(new Date()-7*24*60*60*1000).getTime();%>
+			
+			<h3>》一周以内</h3>
+			<ul>
+				<%for(var i = startblog; i < timeorder.length; i++){
+					var b = timeorder[i];
+					startblog = i;
+					if(blogs[b].time < endtime){
+						break;
+					}
+					else{%>
+					<li><dt><%=blogs[b].showtime%></dt><dl><a href="<%=blogs[b].relative%>"><%=blogs[b].title%></a></dl></li>
+				<%}}%>
+			</ul>
+		</div>
+		
+		<div class="archive-item">
+			<%endtime = new Date(new Date()-30*24*60*60*1000).getTime();%>
+			<h3>》一月以内</h3>
+			<ul>
+				<%for(var i = startblog; i < timeorder.length; i++){
+					var b = timeorder[i];
+					startblog = i;
+					if(blogs[b].time < endtime){
+						break;
+					}
+					else{%>
+					<li><dt><%=blogs[b].showtime%></dt><dl><a href="<%=blogs[b].relative%>"><%=blogs[b].title%></a></dl></li>
+				<%}}%>
+			</ul>
+		</div>
+		
+		<div class="archive-item">
+			<h3>》更早以前</h3>			
+			<ul>
+				<%for(var i = startblog; i < timeorder.length; i++){
+					var b = timeorder[i];		
+					startblog = i;%>
+					<li><dt><%=blogs[b].showtime%></dt><dl><a href="<%=blogs[b].relative%>"><%=blogs[b].title%></a></dl></li>
+				<%}%>
+			</ul>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta property="wb:webmaster" content="27c96956abf1b797" />
+<title>FiBlog::<%=title%></title>
+<link rel="stylesheet" href="<%=template%>style.css" type="text/css"></link>
+<link rel="stylesheet" href="<%=template%>highlight.css" type="text/css"></link>
+<link rel="stylesheet" href="<%=template%>markdown.css" type="text/css"></link>
+</head>
+<body>
+<div class="header">
+	
+		<p class="discription"><%=discription%></p>
+	
+</div>
+
+<div class="layout">	
+	<div class="main">
+		<div class="navbar">
+			<ul>
+				<li><a href="/"<%if(title === "timeline"){%>class="nav_selected"<%}%> >Home</a></li>
+				<li><a href="#">Date</a></li>
+				<li><a href="/archive"<%if(title === "archive"){%>class="nav_selected"<%}%> >Archive</a></li>
+				<li><a href="/about.md" <%if(title === "about"){%>class="nav_selected"<%}%>>About</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<%if(extname === '.md'){%>
+				<%=include('oneblog.html',{patharr:patharr})%>
+			<%}%>
+			<%switch(patharr[0]){
+				  case '':%><%=include('timeline.html')%><%;break;%>
+				<%case 'archive':%><%=include('archive.html')%><%;break;%>
+				<%case 'test':%><%=include('test.html')%><%;break;%>
+				<default: break;>
+			<%}%>
+		</div>
+	</div>
+	<div class="sidebar">
+		<%=include('sidebar.html')%>
+	</div>
+</div>
+
+<%=include('footer.html')%>
+</body>
+</html>

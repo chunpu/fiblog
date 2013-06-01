@@ -1,0 +1,8 @@
+<%blogorder.forEach(function(i){%>
+<div class="oneblog">	
+	<h2 class="title"><%=blogs[i].title%></h2>
+	<span class="showtime"><%=blogs[i].detailtime%></span>
+	<%=blogs[i].preview%>
+	<a class="readall" href="<%=blogs[i].relative%>">阅读全文</a>
+</div>
+<%})%>

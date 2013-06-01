@@ -1,0 +1,8 @@
+<%var blog = getBlogByPath(patharr)%>
+<div class="oneblog markdown">
+	<h2 class="markdown-title"><%=blog.title%></h2>
+	<span class="pull-right"><%=blog.detailtime%></span>
+	<div class="markdown-text"><%=blog.html%></div>
+	<a href="/">回到主页</a><br>
+	<%=include('share.html')%>
+</div>

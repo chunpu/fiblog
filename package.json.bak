@@ -1,0 +1,25 @@
+{
+  "name": "newfiblog",
+  "version": "0.0.8",
+  "description": "ERROR: No README.md file found!",
+  "main": "index.js",
+  "dependencies": {
+    "highlight": "~0.2.3",
+    "marked": "~0.2.8"
+  },
+  "bin": {
+    "newfiblog": "./bin/fiblog.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "_id": "newfiblog@0.0.8",
+  "readme": "ERROR: No README.md file found!",
+  "_from": "newfiblog",
+  "dist": {
+    "shasum": "191cd2a3c947939e2726191b514dac5dae61f3c1"
+  }
+}

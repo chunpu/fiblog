@@ -1,0 +1,10 @@
+<%var blog = getBlogByPath(patharr)%>
+<div class="oneblog markdown">
+	<div class="blog-info">
+		<div class="light pull-right"><span><%=blog.detailtime%></span></div>
+		<div class="blog-title"><a href="<%=blog.relative%>"><span><%=blog.title%></span></a></div>		
+	</div>
+	<div class="markdown-text"><%=blog.html%></div>
+	<%=include('share.html')%>
+	<%=include('comment.html')%>
+</div>

@@ -1,0 +1,16 @@
+<div class="timeline">
+<%timeorder.forEach(function(i){%>
+<div class="oneblog">
+	<div class="blog-info">
+		<div class="blog-title"><a href="<%=blogs[i].relative%>"><span><%=blogs[i].title%></span></a></div>
+		<div class="light"><span><%=blogs[i].detailtime%></span></div>
+	</div>
+	<div class="blog-content clear-font-size">
+		<%=blogs[i].preview%>
+	</div>
+	<div class="align-right">
+		<a href="<%=blogs[i].relative%>">阅读全文</a>
+	</div>
+</div>
+<%})%>
+</div>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FiBlog::<%=title%></title>
+<link rel="stylesheet" href="/<%=template%>style.css" type="text/css"></link>
+<link rel="stylesheet" href="/<%=template%>highlight.css" type="text/css"></link>
+</head>
+<body>
+<div id="header">
+	<div class="header_bg">
+		<p class="discription"><%=discription%></p>
+	</div>
+	
+	<ul class="navbar">
+		<li><a href="/"<%if(title === "timeline"){%>class="nav_selected"<%}%> >Home</a></li>
+		<li><a href="#">Date</a></li>
+		<li><a href="/archive"<%if(title === "archive"){%>class="nav_selected"<%}%> >Archive</a></li>
+		<li><a href="/about.md" <%if(title === "about"){%>class="nav_selected"<%}%>>About</a></li>
+	</ul>
+
+</div>
+
+<div class="layout">
+	<div class="content">
+	<%=content%>
+	</div>
+</div>
+
+<div id="footer">
+	<div class="powered_by">
+	<a href="http://biedalian.com">Powered By BieDaLian.com</a>
+	<span>@2013-2-14</span>
+	</div>
+</div>
+</body>
+</html>

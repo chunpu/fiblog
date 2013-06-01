@@ -1,0 +1,69 @@
+.markdown{
+	padding: 20px 32px 25px 38px;
+	line-height: 1.8em;
+}
+
+.markdown-text{
+	margin-bottom: 20px;
+}
+
+.markdown-text img{
+	max-width: 900px;
+	overflow: hidden;
+}
+@media (max-width: 700px) {
+  .markdown-text img {
+    width: 100%;
+	display: block;
+  }
+}
+
+.markdown-title{
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.markdown li{
+	list-style-type: decimal;
+}
+
+.markdown ol{
+	-webkit-padding-start: 40px;
+}
+
+
+.markdown h1 h2 h3 h4{
+	color: #222;
+}
+
+.markdown h1,h2,h3{
+	line-height: 1.5em;
+}
+
+.markdown a{
+	color: #3AA2B4;
+}
+
+.markdown a:hover{
+	color: #E26C6C;
+}
+
+.markdown blockquote {
+    border-left: 0.4em solid #DDD;
+    margin: 15px 0 25px 0;
+    padding: 0 15px;
+    color: #777;
+}
+
+.markdown code{ 
+    padding: 0 5px;
+    margin: 0 2px;
+    font-size: 13px;
+    font-family: Menlo, monospace;
+}
+
+.markdown strong {
+    color: #060606;
+    font-weight: normal;
+    font-size: 1.1em;
+}

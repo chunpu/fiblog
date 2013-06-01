@@ -1,0 +1,10 @@
+<div class="timeline">
+	<%timeorder.forEach(function(i){%>
+	<div class="col">
+		<div class="artical">
+			<a href="<%=blogs[i].relative%>"><h2 class="artical-title"><%=blogs[i].title%></h2></a>
+			<p><%=blogs[i].preview%></p>
+		</div>
+	</div>
+	<%})%>
+</div>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="wb:webmaster" content="27c96956abf1b797" />
+<title>FiBlog::<%=title%></title>
+<link rel="stylesheet" href="/<%=template%>style.css" type="text/css"></link>
+<link rel="stylesheet" href="/<%=template%>highlight.css" type="text/css"></link>
+<link rel="stylesheet" href="/<%=template%>markdown.css" type="text/css"></link>
+</head>
+<body>
+<div class="header">
+	<a href="/" class="btn">This is Fiblog</a>	
+	<p>大婶也是从萝莉过来的。我个菜鸟就不能混了？</p>
+</div>
+<div class="layout">
+	<%if(extname === '.md'){%>
+		<%=include('oneblog.html',{patharr:patharr,template:template})%>
+	<%}%>
+	<%switch(patharr[0]){
+		  case '':%><%=include('timeline.html',{template:template})%><%;break;%>
+		<%//case 'archive':%><%=include('archive.html')%><%;break;%>
+		<%//case 'test':%><%=include('test.html')%><%;break;%>
+		<default: break;>
+	<%}%>
+
+</div>
+<%=include('footer.html',{template:template})%>
+</body>
+</html>
